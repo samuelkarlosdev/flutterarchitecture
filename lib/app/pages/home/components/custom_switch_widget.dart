@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_architecture/app/controllers/app_controller.dart';
+import 'package:flutter_architecture/app/app_controller.dart';
 
 class CustomSwitchWidget extends StatelessWidget {
   const CustomSwitchWidget({super.key});
@@ -10,7 +10,7 @@ class CustomSwitchWidget extends StatelessWidget {
         valueListenable: AppController.instance.themeSwitch,
         builder: (context, isDark, child) {
           return Switch(
-              value: AppController.instance.themeSwitch.value,
+              value: AppController.instance.isDark,
               onChanged: (value) {
                 AppController.instance.changeTheme(value);
               });

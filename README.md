@@ -2,6 +2,7 @@
 
 Esse projeto tem como base aplicações de conhecimentos em Dart e Flutter sobre Arquitetura de Software:
 
-- Views and Controllers;
+- Views, Controllers and Components;
+- Models;
 
 
