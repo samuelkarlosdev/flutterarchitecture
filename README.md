@@ -7,5 +7,6 @@ Esse projeto tem como base aplicações de conhecimentos em Dart e Flutter sobre
 - Service;
 - ViewModel;
 - Repository;
+- Testes de Unidade;
 
 

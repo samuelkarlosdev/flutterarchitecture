@@ -13,6 +13,10 @@ class JsonPlaceholderViewModel {
       jsonPlaceholderPostsModel = ValueNotifier([]);
 
   fill() async {
-    jsonPlaceholderPostsModel.value = await repository.getPosts();
+    try {
+      jsonPlaceholderPostsModel.value = await repository.getPosts();
+    } catch (e) {
+      //print(e);
+    }
   }
 }
