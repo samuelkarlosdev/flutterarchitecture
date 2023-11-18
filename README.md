@@ -4,7 +4,8 @@ Esse projeto tem como base aplicações de conhecimentos em Dart e Flutter sobre
 
 - Views, Controllers and Components;
 - Models;
-- Services;
+- Service;
 - ViewModel;
+- Repository;
 
 
