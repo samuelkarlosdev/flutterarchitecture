@@ -2,9 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_architecture/app/models/json_placeholder_posts_model.dart';
 import 'package:flutter_architecture/app/pages/home/components/custom_switch_widget.dart';
 import 'package:flutter_architecture/app/pages/home/home_controller.dart';
-import 'package:flutter_architecture/app/repositories/json_placeholder_repository.dart';
-import 'package:flutter_architecture/app/services/client_http_service.dart';
-import 'package:flutter_architecture/app/viewmodels/json_placeholder_viewmodel.dart';
+import 'package:flutter_modular/flutter_modular.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -14,13 +12,7 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  final controller = HomeController(
-    JsonPlaceholderViewModel(
-      JsonPlaceholderRepository(
-        ClientHttpService(),
-      ),
-    ),
-  );
+  final controller = Modular.get<HomeController>();
 
   @override
   void initState() {
