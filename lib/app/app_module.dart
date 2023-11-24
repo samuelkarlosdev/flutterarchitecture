@@ -1,7 +1,10 @@
+import 'package:flutter/material.dart';
 import 'package:flutter_architecture/app/app_controller.dart';
 import 'package:flutter_architecture/app/interfaces/client_http_interface.dart';
 import 'package:flutter_architecture/app/interfaces/local_storage_interface.dart';
 import 'package:flutter_architecture/app/pages/home/home_controller.dart';
+import 'package:flutter_architecture/app/pages/home/home_page.dart';
+import 'package:flutter_architecture/app/pages/login/login_page.dart';
 import 'package:flutter_architecture/app/repositories/json_placeholder_repository.dart';
 import 'package:flutter_architecture/app/repositories/json_placeholder_repository_interface.dart';
 import 'package:flutter_architecture/app/services/client_http_service.dart';
@@ -23,5 +26,8 @@ class AppModule extends Module {
   }
 
   @override
-  void routes(r) {}
+  void routes(r) {
+    r.child('/', child: (context) => const LoginPage());
+    r.child('/home', child: (context) => const HomePage());
+  }
 }

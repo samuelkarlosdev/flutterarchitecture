@@ -11,7 +11,8 @@ class AppWidget extends StatelessWidget {
     return ValueListenableBuilder<bool>(
         valueListenable: Modular.get<AppController>().themeSwitch,
         builder: (context, isDark, child) {
-          return MaterialApp(
+          Modular.setInitialRoute('/');
+          return MaterialApp.router(
             title: 'Flutter Demo',
             theme: ThemeData(
               colorScheme: ColorScheme.fromSeed(
@@ -19,7 +20,7 @@ class AppWidget extends StatelessWidget {
                   brightness: isDark ? Brightness.dark : Brightness.light),
               useMaterial3: true,
             ),
-            home: const HomePage(),
+            routerConfig: Modular.routerConfig,
           );
         });
   }
