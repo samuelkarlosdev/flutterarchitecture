@@ -1,10 +1,10 @@
 import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter_architecture/app/interfaces/client_http_interface.dart';
-import 'package:flutter_architecture/app/models/json_placeholder_posts_model.dart';
-import 'package:flutter_architecture/app/repositories/json_placeholder_repository.dart';
-import 'package:flutter_architecture/app/viewmodels/json_placeholder_viewmodel.dart';
+import 'package:flutter_architecture/app/core/interfaces/client_http_interface.dart';
+import 'package:flutter_architecture/app/modules/home/models/json_placeholder_posts_model.dart';
+import 'package:flutter_architecture/app/modules/home/repositories/json_placeholder_repository.dart';
+import 'package:flutter_architecture/app/modules/home/viewmodels/json_placeholder_viewmodel.dart';
 import 'package:test/test.dart';
 
 class ClientHttpMock implements IClientHttp {

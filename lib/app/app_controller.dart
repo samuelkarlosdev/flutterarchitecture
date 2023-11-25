@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_architecture/app/viewmodels/change_theme_viewmodel.dart';
+import 'package:flutter_architecture/app/core/viewmodels/change_theme_viewmodel.dart';
 
 class AppController {
   final ChangeThemeViewModel changeThemeViewModel;

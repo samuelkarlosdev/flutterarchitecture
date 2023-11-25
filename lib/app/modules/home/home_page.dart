@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_architecture/app/models/json_placeholder_posts_model.dart';
-import 'package:flutter_architecture/app/pages/home/components/custom_switch_widget.dart';
-import 'package:flutter_architecture/app/pages/home/home_controller.dart';
+import 'package:flutter_architecture/app/modules/home/models/json_placeholder_posts_model.dart';
+import 'package:flutter_architecture/app/modules/home/components/custom_switch_widget.dart';
+import 'package:flutter_architecture/app/modules/home/home_controller.dart';
 import 'package:flutter_modular/flutter_modular.dart';
 
 class HomePage extends StatefulWidget {
